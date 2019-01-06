@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash 
 rsrc="rsync://centos.mirror.liquidtelecom.com/centos"
 destdir="/mnt/MAIN/Software/Operating_Systems"
 tmp="/tmp/Centos-rsync.list"
