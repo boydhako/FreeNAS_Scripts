@@ -26,7 +26,7 @@ function GETINFO {
 	fi
 }
 function GETCENTOS {
-	rsync -vrhi --exclude="*.torrent" --log-file=$log $rsrc/$version/isos $destdir
+	rsync -vrhicz --exclude="*.torrent" --log-file=$log $rsrc/$version/isos $destdir
 }
 function CLEANUP {
 	rm $tmp
