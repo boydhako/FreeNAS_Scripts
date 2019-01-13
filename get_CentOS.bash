@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -xv
 rsrc="rsync://centos.mirror.liquidtelecom.com/centos"
 destdir="/mnt/MAIN/Software/Operating_Systems"
 tmp="/tmp/Centos-rsync.list"
@@ -26,7 +26,7 @@ function GETINFO {
 	fi
 }
 function GETCENTOS {
-	rsync -vrhicz --exclude="*.torrent" --log-file=$log $rsrc/$version/isos $destdir
+	rsync -vrhiz --exclude="*.torrent" --log-file=$log $rsrc/$version/isos/ $destdir
 }
 function CLEANUP {
 	rm $tmp
@@ -34,6 +34,6 @@ function CLEANUP {
 function MAIN {
 	GETINFO
 	GETCENTOS
-	#CLEANUP
+	CLEANUP
 }
 MAIN
