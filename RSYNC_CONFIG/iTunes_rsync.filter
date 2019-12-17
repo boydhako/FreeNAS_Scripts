@@ -1,3 +1,4 @@
+#usage in rsyncd.conf module: filter = merge <file>
 #exclude=*.[iI][iT][cC],*.[aA][pP][pP],*.[iI][pP][aA],*/iTunes\ Media/Podcasts/*
 - *.[iI][tT][cC]
 - *.[aA][pP][pP]
