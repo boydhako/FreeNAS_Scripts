@@ -1,0 +1,5 @@
+#exclude=*.[iI][iT][cC],*.[aA][pP][pP],*.[iI][pP][aA],*/iTunes\ Media/Podcasts/*
+- *.[iI][tT][cC]
+- *.[aA][pP][pP]
+- *.[iI][pP][aA]
+- ***iTunes\ Media/Podcasts/***
